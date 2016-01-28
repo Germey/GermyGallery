@@ -18,6 +18,7 @@ class CreateImagesTable extends Migration {
             $table->string('path');
             $table->string('title');
             $table->text('description');
+            $table->integer('memory_id');
             $table->timestamps();
 		});
 	}
