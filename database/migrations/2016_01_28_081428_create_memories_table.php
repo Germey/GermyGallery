@@ -19,7 +19,8 @@ class CreateMemoriesTable extends Migration {
             $table->text('description');
             $table->string('location');
             $table->integer('happiness');
-            $table->date('date');
+            $table->date('date_start');
+            $table->date('date_end');
             $table->timestamps();
 		});
 	}

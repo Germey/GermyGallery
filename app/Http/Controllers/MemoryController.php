@@ -2,7 +2,9 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use View;
+use App\Http\Requests\MemoryRequest;
+use Illuminate\Support\Facades\Redirect;
+use View, Flash;
 use Illuminate\Http\Request;
 use App\Model\Memory;
 
@@ -25,7 +27,7 @@ class MemoryController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return View::make('memory.create');
 	}
 
 	/**
@@ -33,9 +35,16 @@ class MemoryController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(MemoryRequest $request)
 	{
-		//
+        $memory = Memory::create($request->all());
+        if ($memory) {
+            Flash::success('成功添加了一份记忆');
+            Return Redirect::to('/manage/memory');
+        } else {
+            Flash::error('添加失败');
+            Return Redirect::back()->withInput();
+        }
 	}
 
 	/**

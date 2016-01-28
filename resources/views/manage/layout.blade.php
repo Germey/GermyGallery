@@ -20,6 +20,7 @@
     {!! Html::style('/css/plugins/font-awesome/font-awesome.min.css') !!}
     {!! Html::style('/css/animate.min.css') !!}
     {!! Html::style('/css/style.css') !!}
+    {!! Html::style('/css/manage.css') !!}
     {!! Html::script('/js/jquery.min.js') !!}
     {!! Html::script('/js/bootstrap.min.js') !!}
 </head>

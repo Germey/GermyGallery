@@ -8,6 +8,8 @@
                     <div class="ibox-title">
                         <h5>所有事件</h5>
                         <div class="ibox-tools">
+                            <a href="{{ url('/manage/memory/create') }}" class="btn btn-primary btn-xs">创建新项目</a>
+
                         </div>
                     </div>
                     <div class="ibox-content">

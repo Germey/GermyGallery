@@ -52,7 +52,7 @@ return [
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'zh_CN',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -147,7 +147,10 @@ return [
 		'App\Providers\RouteServiceProvider',
 		'App\Providers\SidebarServiceProvider',
 
-	],
+        'Laracasts\Flash\FlashServiceProvider',
+
+
+    ],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -195,8 +198,9 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
         'Form'      => 'Illuminate\Html\FormFacade',
-        'Html'      => 'Illuminate\Html\HtmlFacade'
+        'Html'      => 'Illuminate\Html\HtmlFacade',
+        'Flash'     => 'Laracasts\Flash\Flash',
 
-	],
+    ],
 
 ];
