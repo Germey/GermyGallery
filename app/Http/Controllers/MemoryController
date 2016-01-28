@@ -4,9 +4,9 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use View;
 use Illuminate\Http\Request;
-use App\Model\Event;
+use App\Model\Memory;
 
-class EventController extends Controller {
+class MemoryController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -15,7 +15,7 @@ class EventController extends Controller {
 	 */
 	public function index()
 	{
-		return View::make('event.index')->withEvents(Event::all());
+		return View::make('memory.index')->withEvents(Memory::all());
 	}
 
 	/**

@@ -12,14 +12,14 @@
     */
 
 
-    Route::model('event', 'App\Model\Event');
+    Route::model('memory', 'App\Model\Memory');
 
     Route::get('/', 'DisplayController@index');
 
     Route::group(['prefix' => 'manage'], function () {
         Route::get('/', function() {
-           return Redirect::to('/manage/event');
+           return Redirect::to('/manage/memory');
         });
-        Route::resource('event', 'EventController');
+        Route::resource('memory', 'MemoryController');
     });
 

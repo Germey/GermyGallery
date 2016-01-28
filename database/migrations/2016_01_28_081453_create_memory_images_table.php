@@ -14,8 +14,10 @@ class CreateMemoryImagesTable extends Migration {
 	{
 		Schema::create('memory_images', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->timestamps();
+            $table->increments('id');
+            $table->integer('memory_id');
+            $table->integer('image_id');
+            $table->timestamps();
 		});
 	}
 
