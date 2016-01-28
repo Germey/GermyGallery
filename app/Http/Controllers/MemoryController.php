@@ -17,7 +17,7 @@ class MemoryController extends Controller {
 	 */
 	public function index()
 	{
-		return View::make('memory.index')->withEvents(Memory::all());
+		return View::make('memory.index')->withMemories(Memory::all());
 	}
 
 	/**
@@ -53,9 +53,9 @@ class MemoryController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show(Memory $memory)
 	{
-		//
+		Return View::make('memory.show')->withMemory($memory);
 	}
 
 	/**

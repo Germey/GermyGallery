@@ -28,15 +28,15 @@
                         <div class="project-list">
                             <table class="table table-hover">
                                 <tbody>
-                                @foreach($events as $event)
+                                @foreach($memories as $memory)
                                     <tr>
                                         <td class="project-status">
                                             <span class="label label-primary">进行中</span>
                                         </td>
                                         <td class="project-title">
-                                            <a href="{{ url('/manage/event/'.$event->id) }}">{{ $event->title }}</a>
+                                            <a href="{{ url('/manage/memory/'.$memory->id) }}">{{ $memory->title }}</a>
                                             <br/>
-                                            <small>创建于 {{ $event->created_at }}</small>
+                                            <small>创建于 {{ $memory->created_at }}</small>
                                         </td>
                                         <td class="project-completion">
 
@@ -45,6 +45,8 @@
 
                                         </td>
                                         <td class="project-actions">
+                                            <a href="{{ url('/manage/memory/'.$memory->id) }}" class="btn btn-white btn-sm"><i class="fa fa-angle-double-right"></i>详情</a>
+
                                         </td>
                                     </tr>
                                 @endforeach

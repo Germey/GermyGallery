@@ -49,7 +49,7 @@
                         <div class="form-group">
                             {!! Form::label('date_start', '发生日期', ['class' => 'col-sm-2 control-label']) !!}
                             <div class="col-sm-10">
-                                {!! Form::text('date_start', null, ['class' => 'form-control']) !!}
+                                {!! Form::text('date_start', null, ['class' => 'form-control datepicker', 'placeholder' => '选择日期', 'data-date-format' => 'yyyy-mm-dd']) !!}
                                 <span class="help-block m-b-none">帮助文本，可能会超过一行，以块级元素显示</span>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                         <div class="form-group">
                             {!! Form::label('date_end', '圆满日期', ['class' => 'col-sm-2 control-label']) !!}
                             <div class="col-sm-10">
-                                {!! Form::text('date_end', null, ['class' => 'form-control']) !!}
+                                {!! Form::text('date_end', null, ['class' => 'form-control datepicker', 'placeholder' => '选择日期', 'data-date-format' => 'yyyy-mm-dd']) !!}
                                 <span class="help-block m-b-none">帮助文本，可能会超过一行，以块级元素显示</span>
                             </div>
                         </div>
@@ -89,5 +89,5 @@
             </div>
         </div>
     </div>
-
+    @include('support.datepicker')
 @endsection
