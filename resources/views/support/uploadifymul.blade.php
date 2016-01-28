@@ -8,11 +8,22 @@
                 $('<img>').attr('src', src).appendTo(item);
                 $('<input>').attr({
                     'type': 'hidden',
-                    'name': 'images[]'
+                    'name': 'images[path][]'
                 }).val(src).appendTo(item);
+                $('<input>').attr({
+                    'name': 'images[title][]',
+                    'type': 'text',
+                    'placeholder': '添加标题',
+                }).addClass('form-control m-t-sm').appendTo(item);
+                $('<input>').attr({
+                    'name': 'images[description][]',
+                    'type': 'text',
+                    'placeholder': '添加描述',
+                }).addClass('form-control m-t-sm').appendTo(item);
                 $('<button>').addClass('btn btn-danger btn-xs del-upload').html('<i class="fa fa-remove"></i>删除').appendTo(item);
                 item.appendTo(display);
             }
+
             var ele = $(this);
             var display = $(ele.attr('display'));
             setTimeout(function() {
@@ -52,7 +63,7 @@
             $('.uploadify').fileUpload();
         }
         $('.display-images').on('click', '.del-upload', function() {
-           $(this).parents('.display-item').remove();
+            $(this).parents('.display-item').remove();
         });
     </script>
     <style>
@@ -72,15 +83,10 @@
             margin: 0 auto;
         }
 
-        .display-item {
-            position: relative;
-            height: 220px;
-        }
-
         .del-upload {
-            position: absolute;
-            bottom: 10px;
-            left: 50px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
             width: 90px;
         }
 

@@ -39,14 +39,15 @@ class MemoryController extends Controller {
 	public function store(MemoryRequest $request)
 	{
         $memory = Memory::create($request->all());
-        $images = $request->get('images', []);
-        dd($images);
-        if ($images) {
-            foreach($images as $image) {
-                Image::create($image);
-            }
-        }
+
         if ($memory) {
+            $images = $request->get('images', []);
+            if ($images) {
+                $images = assoc_to_index($images);
+                foreach($images as $image) {
+                    $memory->getImages()->create($image);
+                }
+            }
             Flash::success('成功添加了一份记忆');
             Return Redirect::to('/manage/memory');
         } else {

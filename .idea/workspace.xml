@@ -2,110 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89f1fde6-4cc1-41dc-a5fc-073fca2f53a5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/uploadify-cancel.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Model/MemoryImage.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2016_01_28_081453_create_memory_images_table.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/support/uploadify.blade.php" afterPath="$PROJECT_DIR$/resources/views/support/uploadifymul.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/swf/Uploader.swf" afterPath="$PROJECT_DIR$/public/swf/Uploader.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/a1.jpg" afterPath="$PROJECT_DIR$/public/img/a1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/a2.jpg" afterPath="$PROJECT_DIR$/public/img/a2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/a3.jpg" afterPath="$PROJECT_DIR$/public/img/a3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/a4.jpg" afterPath="$PROJECT_DIR$/public/img/a4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/a5.jpg" afterPath="$PROJECT_DIR$/public/img/a5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/a6.jpg" afterPath="$PROJECT_DIR$/public/img/a6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/a7.jpg" afterPath="$PROJECT_DIR$/public/img/a7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/a8.jpg" afterPath="$PROJECT_DIR$/public/img/a8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/a9.jpg" afterPath="$PROJECT_DIR$/public/img/a9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/bg.png" afterPath="$PROJECT_DIR$/public/img/bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/checkmark.png" afterPath="$PROJECT_DIR$/public/img/checkmark.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/patterns/header-profile-skin-1.png" afterPath="$PROJECT_DIR$/public/css/patterns/header-profile-skin-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/patterns/header-profile-skin-3.png" afterPath="$PROJECT_DIR$/public/css/patterns/header-profile-skin-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/patterns/header-profile.png" afterPath="$PROJECT_DIR$/public/css/patterns/header-profile.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/iconfont-logo.png" afterPath="$PROJECT_DIR$/public/img/iconfont-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/icons.png" afterPath="$PROJECT_DIR$/public/img/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/index.jpg" afterPath="$PROJECT_DIR$/public/img/index.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/index_4.jpg" afterPath="$PROJECT_DIR$/public/img/index_4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/layer/skin/default/loading-0.gif" afterPath="$PROJECT_DIR$/public/js/plugins/layer/skin/default/loading-0.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/loading-upload.gif" afterPath="$PROJECT_DIR$/public/img/loading-upload.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/layer/layim/loading.gif" afterPath="$PROJECT_DIR$/public/js/plugins/layer/layim/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/locked.png" afterPath="$PROJECT_DIR$/public/img/locked.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/login-background.jpg" afterPath="$PROJECT_DIR$/public/img/login-background.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/p1.jpg" afterPath="$PROJECT_DIR$/public/img/p1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/p2.jpg" afterPath="$PROJECT_DIR$/public/img/p2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/p3.jpg" afterPath="$PROJECT_DIR$/public/img/p3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/p_big1.jpg" afterPath="$PROJECT_DIR$/public/img/p_big1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/p_big2.jpg" afterPath="$PROJECT_DIR$/public/img/p_big2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/p_big3.jpg" afterPath="$PROJECT_DIR$/public/img/p_big3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile.jpg" afterPath="$PROJECT_DIR$/public/img/profile.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile_big.jpg" afterPath="$PROJECT_DIR$/public/img/profile_big.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile_small.jpg" afterPath="$PROJECT_DIR$/public/img/profile_small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/progress.png" afterPath="$PROJECT_DIR$/public/img/progress.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/qr_code.png" afterPath="$PROJECT_DIR$/public/img/qr_code.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/patterns/shattered.png" afterPath="$PROJECT_DIR$/public/css/patterns/shattered.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0001.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0001.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0002.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0002.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0003.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0003.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0004.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0004.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0005.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0005.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0006.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0006.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0007.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0007.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0008.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0008.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0009.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0009.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0010.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0010.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/studio_0011.jpg" afterPath="$PROJECT_DIR$/public/img/studio_0011.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/success.png" afterPath="$PROJECT_DIR$/public/img/success.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/swf/uploadify.swf" afterPath="$PROJECT_DIR$/public/swf/uploadify.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/user.png" afterPath="$PROJECT_DIR$/public/img/user.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/wenku_logo.png" afterPath="$PROJECT_DIR$/public/img/wenku_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Image.php" afterPath="$PROJECT_DIR$/app/Model/Image.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Memory.php" afterPath="$PROJECT_DIR$/app/Model/Memory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MemoryController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MemoryController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/anim.css" afterPath="$PROJECT_DIR$/public/css/anim.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/animate.min.css" afterPath="$PROJECT_DIR$/public/css/animate.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/datepicker/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/public/js/plugins/datepicker/bootstrap-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/contabs.min.js" afterPath="$PROJECT_DIR$/public/js/contabs.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/memory/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/memory/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/plugins/datepicker/datepicker.css" afterPath="$PROJECT_DIR$/public/css/plugins/datepicker/datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/plugins/font-awesome/font-awesome.min.css" afterPath="$PROJECT_DIR$/public/css/plugins/font-awesome/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/hplus.min.js" afterPath="$PROJECT_DIR$/public/js/hplus.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/metisMenu/jquery.metisMenu.js" afterPath="$PROJECT_DIR$/public/js/plugins/metisMenu/jquery.metisMenu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.min.js" afterPath="$PROJECT_DIR$/public/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/slimscroll/jquery.slimscroll.min.js" afterPath="$PROJECT_DIR$/public/js/plugins/slimscroll/jquery.slimscroll.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/uploadify/jquery.uploadify.min.js" afterPath="$PROJECT_DIR$/public/js/plugins/uploadify/jquery.uploadify.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/layer/laydate/laydate.js" afterPath="$PROJECT_DIR$/public/js/plugins/layer/laydate/laydate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/layer/skin/layer.css" afterPath="$PROJECT_DIR$/public/js/plugins/layer/skin/layer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/layer/skin/layer.ext.css" afterPath="$PROJECT_DIR$/public/js/plugins/layer/skin/layer.ext.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/layer/extend/layer.ext.js" afterPath="$PROJECT_DIR$/public/js/plugins/layer/extend/layer.ext.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/layer/layer.min.js" afterPath="$PROJECT_DIR$/public/js/plugins/layer/layer.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/layer/layim/layim.css" afterPath="$PROJECT_DIR$/public/js/plugins/layer/layim/layim.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/layer/layim/layim.js" afterPath="$PROJECT_DIR$/public/js/plugins/layer/layim/layim.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/manage.css" afterPath="$PROJECT_DIR$/public/css/manage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/pace/pace.min.js" afterPath="$PROJECT_DIR$/public/js/plugins/pace/pace.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/photo-anim.css" afterPath="$PROJECT_DIR$/public/css/photo-anim.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/layer/skin/moon/style.css" afterPath="$PROJECT_DIR$/public/js/plugins/layer/skin/moon/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/plugins/toastr/toastr.min.css" afterPath="$PROJECT_DIR$/public/css/plugins/toastr/toastr.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/toastr/toastr.min.js" afterPath="$PROJECT_DIR$/public/js/plugins/toastr/toastr.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/plugins/uploadify/uploadify.css" afterPath="$PROJECT_DIR$/public/css/plugins/uploadify/uploadify.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/demo/webuploader-demo.min.css" afterPath="$PROJECT_DIR$/public/css/demo/webuploader-demo.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/demo/webuploader-demo.min.js" afterPath="$PROJECT_DIR$/public/js/demo/webuploader-demo.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/plugins/webuploader/webuploader.css" afterPath="$PROJECT_DIR$/public/css/plugins/webuploader/webuploader.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/plugins/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/public/js/plugins/webuploader/webuploader.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/autoload.php" afterPath="$PROJECT_DIR$/bootstrap/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/support/uploadifymul.blade.php" afterPath="$PROJECT_DIR$/resources/views/support/uploadifymul.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Gallery.iws" />
@@ -128,38 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/memory/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.258064">
-              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemoryController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemoryController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.741936">
-              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-              <folding>
-                <element signature="e#39#61#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Memory.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Model/Memory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50162864">
-              <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Image.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Model/Image.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -190,6 +58,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MemoryController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemoryController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.54940283">
+              <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+              <folding>
+                <element signature="e#39#61#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="validation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/lang/zh_CN/validation.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -203,18 +83,40 @@
       <file leaf-file-name="uploadifymul.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/support/uploadifymul.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-53.935482">
-              <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+            <state vertical-scroll-proportion="-18.35484">
+              <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../hwby/resources/views/support/upload.blade.php">
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../hwby/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.61290324">
-              <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+            <state vertical-scroll-proportion="-88.70968">
+              <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.7096774">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#10#108#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../hwby/bootstrap/autoload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.741936">
+              <caret line="25" column="49" selection-start-line="19" selection-start-column="4" selection-end-line="25" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -270,12 +172,14 @@
         <option value="$PROJECT_DIR$/public/css/plugins/uploadify/uploadify.css" />
         <option value="$PROJECT_DIR$/resources/views/memory/create.blade.php" />
         <option value="$PROJECT_DIR$/../hwby/resources/views/support/upload.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/support/uploadifymul.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/MemoryRequest.php" />
         <option value="$PROJECT_DIR$/resources/lang/zh_CN/validation.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MemoryController.php" />
         <option value="$PROJECT_DIR$/app/Model/Memory.php" />
         <option value="$PROJECT_DIR$/app/Model/Image.php" />
+        <option value="$PROJECT_DIR$/bootstrap/autoload.php" />
+        <option value="$PROJECT_DIR$/config/functions.php" />
+        <option value="$PROJECT_DIR$/resources/views/support/uploadifymul.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MemoryController.php" />
       </list>
     </option>
   </component>
@@ -600,6 +504,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hwby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hwby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -943,32 +883,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="upload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1084,6 +998,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1238,11 +1170,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/resources/views/memory" />
-      <recent name="$PROJECT_DIR$/resources/lang" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/event" />
@@ -1289,10 +1221,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24420024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24420024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1320,32 +1252,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../hwby/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5161295">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/zh_CN/pagination.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3344191">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#32#69#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/lang/zh_CN/passwords.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1358,14 +1264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-38.322582">
           <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../hwby/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-108.58064">
-          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1660,14 +1558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/support/uploadifymul.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-53.935482">
-          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../hwby/resources/views/support/upload.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.61290324">
@@ -1676,10 +1566,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/MemoryRequest.php">
+    <entry file="file://$PROJECT_DIR$/app/Model/Memory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.580645">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state vertical-scroll-proportion="-14.903226">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -1700,16 +1590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.741936">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-          <folding>
-            <element signature="e#39#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Model/Image.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.612904">
@@ -1718,11 +1598,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Memory.php">
+    <entry file="file://$PROJECT_DIR$/bootstrap/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50162864">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.42996743">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hwby/bootstrap/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.741936">
+          <caret line="25" column="49" selection-start-line="19" selection-start-column="4" selection-end-line="25" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/MemoryRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.580645">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/support/uploadifymul.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.35484">
+          <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hwby/bootstrap/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hwby/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-88.70968">
+          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7096774">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#10#108#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54940283">
+          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+          <folding>
+            <element signature="e#39#61#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
