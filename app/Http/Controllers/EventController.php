@@ -2,8 +2,9 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use View;
 use Illuminate\Http\Request;
+use App\Model\Event;
 
 class EventController extends Controller {
 
@@ -14,7 +15,7 @@ class EventController extends Controller {
 	 */
 	public function index()
 	{
-		return 1;
+		return View::make('event.index')->withEvents(Event::all());
 	}
 
 	/**

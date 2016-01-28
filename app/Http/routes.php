@@ -17,6 +17,9 @@
     Route::get('/', 'DisplayController@index');
 
     Route::group(['prefix' => 'manage'], function () {
+        Route::get('/', function() {
+           return Redirect::to('/manage/event');
+        });
         Route::resource('event', 'EventController');
     });
 
