@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Redirect;
 use View, Flash;
 use Illuminate\Http\Request;
 use App\Model\Memory;
+use App\Model\Image;
 
 class MemoryController extends Controller {
 
@@ -38,6 +39,13 @@ class MemoryController extends Controller {
 	public function store(MemoryRequest $request)
 	{
         $memory = Memory::create($request->all());
+        $images = $request->get('images', []);
+        dd($images);
+        if ($images) {
+            foreach($images as $image) {
+                Image::create($image);
+            }
+        }
         if ($memory) {
             Flash::success('成功添加了一份记忆');
             Return Redirect::to('/manage/memory');

@@ -3,27 +3,18 @@
     {!! Html::script('/js/plugins/uploadify/jquery.uploadify.min.js') !!}
     <script>
         jQuery.fn.fileUpload = function() {
-            function addDel(ele, img, hidden) {
-                if (img.siblings('.del-upload')) {
-                    img.siblings('.del-upload').remove();
-                }
-                var del = $('<div></div>').addClass('btn btn-danger btn-sm del-upload').html('<i class="fa fa-remove"></i>删除');
-                del.insertAfter(img);
-                del.on('click', function() {
-                    img.attr('src', '');
-                    hidden.val('');
-                    $(this).remove();
-                    $(ele.attr('save')).show();
-                });
+            function addItem(src, display) {
+                var item = $('<div>').addClass('col-md-2 display-item');
+                $('<img>').attr('src', src).appendTo(item);
+                $('<input>').attr({
+                    'type': 'hidden',
+                    'name': 'images[]'
+                }).val(src).appendTo(item);
+                $('<button>').addClass('btn btn-danger btn-xs del-upload').html('<i class="fa fa-remove"></i>删除').appendTo(item);
+                item.appendTo(display);
             }
-
             var ele = $(this);
-            var img = ele.siblings('img');
-            var hidden = ele.siblings('input[type="hidden"]');
-            if (hidden.val()) {
-                img.attr('src', hidden.val());
-                addDel(ele, img, hidden);
-            }
+            var display = $(ele.attr('display'));
             setTimeout(function() {
                 ele.uploadify({
                     'formData': {
@@ -50,10 +41,7 @@
                                 alert('文件错误，无法上传');
                                 break;
                             case '200':
-                                img.attr('src', response.path);
-                                hidden.val(response.path);
-                                addDel(ele, img, hidden);
-                                $(ele.attr('save')).show();
+                                addItem(response.path, display);
                                 break;
                         }
                     }
@@ -63,6 +51,9 @@
         if ($('.uploadify').length > 0) {
             $('.uploadify').fileUpload();
         }
+        $('.display-images').on('click', '.del-upload', function() {
+           $(this).parents('.display-item').remove();
+        });
     </script>
     <style>
         .uploadify {
@@ -76,15 +67,27 @@
             line-height: 15px !important;
         }
 
-        img.pre-view {
-            width: 100%;
+        .uploadify-queue-item {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        .display-item {
+            position: relative;
+            height: 220px;
         }
 
         .del-upload {
-            display: block;
+            position: absolute;
+            bottom: 10px;
+            left: 50px;
             width: 90px;
-            margin: 10px auto;
-            margin-top: 10px;
         }
+
+        .display-item img {
+            width: 100%;
+        }
+
+
     </style>
 </div>

@@ -80,14 +80,19 @@
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <div class="col-md-12 text-center">
-                                {!! Form::file('upload', ['id'=>'upload-images', 'class' => 'uploadify']) !!}
-                                {!! Form::hidden('image', null) !!}
-                                <img src="" class="pre-view" />
+                                {!! Form::file('upload', ['id'=>'upload-images', 'class' => 'uploadify', 'display' => '#display-images']) !!}
+                            </div>
+                        </div>
+                        <div class="form-group display-images">
+                            <div class="col-md-10 col-md-offset-2">
+                                <div class="row" id="display-images">
+
+                                </div>
                             </div>
                         </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
-                            <div class="col-sm-10 col-sm-offset-2">
+                            <div class="col-sm-12 text-center">
                                 {!! Form::submit('保存记忆', ['class' => 'btn btn-primary']) !!}
                             </div>
                         </div>
@@ -100,5 +105,5 @@
     </div>
 
     @include('support.datepicker')
-    @include('support.uploadify')
+    @include('support.uploadifymul')
 @endsection
