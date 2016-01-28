@@ -23,3 +23,6 @@
         Route::resource('memory', 'MemoryController');
     });
 
+    Route::controller('upload', 'UploadController');
+
+
