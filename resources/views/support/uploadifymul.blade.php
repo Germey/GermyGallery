@@ -90,6 +90,10 @@
             width: 90px;
         }
 
+        .display-item {
+            margin: 20px 0;
+        }
+
         .display-item img {
             width: 100%;
         }

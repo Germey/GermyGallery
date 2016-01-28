@@ -21,6 +21,7 @@
            return Redirect::to('/manage/memory');
         });
         Route::resource('memory', 'MemoryController');
+        Route::controller('memory', 'MemoryController');
     });
 
     Route::controller('upload', 'UploadController');

@@ -23,6 +23,7 @@
     {!! Html::style('/css/manage.css') !!}
     {!! Html::script('/js/jquery.min.js') !!}
     {!! Html::script('/js/bootstrap.min.js') !!}
+    {!! Html::script('/js/functions.js') !!}
 </head>
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
 @include('manage.sidebar')
