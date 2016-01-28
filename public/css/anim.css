@@ -1,0 +1,29 @@
+.cd-timeline-img img {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.cd-timeline-img:hover img {
+    transform: rotate(720deg);
+}
+
+.cd-timeline-block, .cd-timeline-content {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+@media only screen and (max-width: 1169px) {
+    .cd-timeline-block:hover .cd-timeline-content {
+        transform: rotateY(360deg);
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-item:hover .cd-timeline-block {
+        transform: rotateY(360deg);
+    }
+}
