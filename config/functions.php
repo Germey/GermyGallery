@@ -122,3 +122,22 @@
             return (json_last_error() == JSON_ERROR_NONE);
         }
     }
+
+
+    if (! function_exists('array_key_equal_value')) {
+        /**
+         * Transfer an array to array which every key equals value.
+         *
+         * @param $array
+         * @return array
+         */
+        function array_key_equal_value($array)
+        {
+            $array = array_unique($array);
+            $array = array_flip($array);
+            foreach ($array as $key => $value) {
+                $array[$key] = $key;
+            }
+            return $array;
+        }
+    }

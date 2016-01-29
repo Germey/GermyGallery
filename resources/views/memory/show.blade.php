@@ -12,7 +12,12 @@
                             <div class="col-sm-12">
                                 <dl class="dl-horizontal">
                                     <dt>类别：</dt>
-                                    <dd><span class="label label-primary">进行中</span>
+                                    <dd>
+                                        @if($tags = $memory->tags)
+                                            @foreach(explode(',', $tags) as $tag)
+                                                <span class="label label-primary">{{ $tag }}</span>
+                                            @endforeach
+                                        @endif
                                     </dd>
                                 </dl>
                             </div>
@@ -151,8 +156,9 @@
 
                         @endif
                         <p>
-                            <i class="fa fa-map-marker"></i><strong>开始时间</strong>
+                            <i class="fa fa-clock-o"></i><strong>开始时间</strong>
                         </p>
+
                         <p>
                             <a data-name="date_start" data-type="combodate" data-value="{{ $memory->date_start }}"
                                data-format="YYYY-MM-DD" data-viewformat="YYYY-MM-DD"
@@ -162,14 +168,27 @@
                         </p>
 
                         <p>
-                            <i class="fa fa-map-marker"></i><strong>圆满时间</strong>
+                            <i class="fa fa-clock-o"></i><strong>圆满时间</strong>
                         </p>
+
                         <p>
                             <a data-name="date_end" data-type="combodate" data-value="{{ $memory->date_end }}"
                                data-format="YYYY-MM-DD" data-viewformat="YYYY-MM-DD"
                                data-template="YYYY 年 MM 月 DD" data-pk="{{ $memory->id }}"
                                data-title="圆满时间" data-url="{{ url('/manage/memory/update-info') }}"
                                class="editable">{{ $memory->date_end }}</a>
+                        </p>
+
+                        <div class="hr-line-dashed m-t-sm m-b-sm"></div>
+
+                        <p>
+                            <i class="fa fa-tag"></i><strong>标签</strong>
+                        </p>
+
+                        <p>
+                            <a id="editable-tags" data-type="select2" data-pk="{{ $memory->id }}"
+                               data-url="{{ url('/manage/memory/update-info') }}" data-name="tags"
+                               data-title="选择或输入分类" class="editable">{{ $memory->tags }}</a>
                         </p>
                     </div>
                 </div>
@@ -181,6 +200,12 @@
     <script>
         $(function() {
             $.fn.editable.defaults.mode = 'inline';
+            $('#editable-tags').editable({
+                select2: {
+                    tags: eval({!! $memory_tags !!}),
+                    tokenSeparators: [",", " "]
+                }
+            });
             $('.editable').editable();
             $('#memory-show').on('click', '.edit-info', function() {
                 $(this).toggleText('取消编辑', '编辑记忆').toggleClass('btn-success');

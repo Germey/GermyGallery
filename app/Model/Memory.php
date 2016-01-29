@@ -23,4 +23,16 @@ class Memory extends Model
     }
 
 
+    /**
+     * Tags array to string.
+     *
+     * @param $tags
+     */
+    public function setTagsAttribute($tags)
+    {
+        if (is_array($tags)) {
+            $this->attributes['tags'] = join(',', $tags);
+        }
+    }
+
 }

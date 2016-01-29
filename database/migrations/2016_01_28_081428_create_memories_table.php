@@ -20,6 +20,7 @@ class CreateMemoriesTable extends Migration {
             $table->string('location');
             $table->integer('happiness');
             $table->date('date_start');
+            $table->string('tags');
             $table->date('date_end');
             $table->timestamps();
 		});

@@ -46,3 +46,6 @@ input[readonly] {
 .error-input {
   border: 1px solid #ED5565;
 }
+.select2-container {
+    max-width: 200px;
+}
