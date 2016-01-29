@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89f1fde6-4cc1-41dc-a5fc-073fca2f53a5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/MemoryServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/MemoryServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Memory.php" afterPath="$PROJECT_DIR$/app/Model/Memory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/memory/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/memory/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/memory/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/memory/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Gallery.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,15 +29,25 @@
       <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/memory/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.096774">
-              <caret line="197" column="28" selection-start-line="197" selection-start-column="28" selection-end-line="197" selection-end-column="28" />
+            <state vertical-scroll-proportion="-9.193548">
+              <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
               <folding>
                 <element signature="e#2494#2540#0#HTML" expanded="true" />
-                <marker date="1454049203000" expanded="true" signature="11163:11869" placeholder="..." />
-                <marker date="1454049203000" expanded="true" signature="11175:11430" placeholder="..." />
-                <marker date="1454049203000" expanded="true" signature="11615:11802" placeholder="..." />
-                <marker date="1454049203000" expanded="true" signature="11650:11801" placeholder="..." />
+                <marker date="1454050446000" expanded="true" signature="11163:11869" placeholder="..." />
+                <marker date="1454050446000" expanded="true" signature="11175:11430" placeholder="..." />
+                <marker date="1454050446000" expanded="true" signature="11615:11802" placeholder="..." />
+                <marker date="1454050446000" expanded="true" signature="11650:11801" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Memory.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Model/Memory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8808234">
+              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/memory/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31852654">
-              <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+            <state vertical-scroll-proportion="-17.741936">
+              <caret line="26" column="122" selection-start-line="26" selection-start-column="122" selection-end-line="26" selection-end-column="122" />
               <folding />
             </state>
           </provider>
@@ -175,14 +185,14 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/MemoryController.php" />
         <option value="$PROJECT_DIR$/public/js/plugins/editable/bootstrap-editable.min.js" />
         <option value="$PROJECT_DIR$/database/migrations/2016_01_28_081428_create_memories_table.php" />
-        <option value="$PROJECT_DIR$/app/Model/Memory.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/config/functions.php" />
         <option value="$PROJECT_DIR$/public/css/plugins/select2/select2.css" />
         <option value="$PROJECT_DIR$/public/css/manage.css" />
-        <option value="$PROJECT_DIR$/resources/views/memory/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/memory/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/MemoryServiceProvider.php" />
+        <option value="$PROJECT_DIR$/resources/views/memory/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/memory/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Model/Memory.php" />
       </list>
     </option>
   </component>
@@ -1273,6 +1283,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.903226">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,6 +1298,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.612904">
           <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1453,14 +1465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Memory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.419355">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2016_01_28_081428_create_memories_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5005417">
@@ -1557,20 +1561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/memory/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.096774">
-          <caret line="197" column="28" selection-start-line="197" selection-start-column="28" selection-end-line="197" selection-end-column="28" />
-          <folding>
-            <element signature="e#2494#2540#0#HTML" expanded="true" />
-            <marker date="1454049203000" expanded="true" signature="11163:11869" placeholder="..." />
-            <marker date="1454049203000" expanded="true" signature="11175:11430" placeholder="..." />
-            <marker date="1454049203000" expanded="true" signature="11615:11802" placeholder="..." />
-            <marker date="1454049203000" expanded="true" signature="11650:11801" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/MemoryServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-48.258064">
@@ -1583,8 +1573,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/memory/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31852654">
-          <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+        <state vertical-scroll-proportion="-17.741936">
+          <caret line="26" column="122" selection-start-line="26" selection-start-column="122" selection-end-line="26" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/memory/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.193548">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+          <folding>
+            <element signature="e#2494#2540#0#HTML" expanded="true" />
+            <marker date="1454050446000" expanded="true" signature="11163:11869" placeholder="..." />
+            <marker date="1454050446000" expanded="true" signature="11175:11430" placeholder="..." />
+            <marker date="1454050446000" expanded="true" signature="11615:11802" placeholder="..." />
+            <marker date="1454050446000" expanded="true" signature="11650:11801" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/Memory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8808234">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
           <folding />
         </state>
       </provider>

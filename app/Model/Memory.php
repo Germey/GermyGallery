@@ -22,7 +22,6 @@ class Memory extends Model
         return $this->hasMany('App\Model\Image', 'memory_id');
     }
 
-
     /**
      * Tags array to string.
      *
@@ -32,6 +31,18 @@ class Memory extends Model
     {
         if (is_array($tags)) {
             $this->attributes['tags'] = join(',', $tags);
+        }
+    }
+
+    /**
+     * Tags array to string.
+     *
+     * @param $tags
+     */
+    public function setDateEndAttribute($date_end)
+    {
+        if (! $date_end != '0000-00-00') {
+            $this->attributes['date_end'] = $date_end;
         }
     }
 
