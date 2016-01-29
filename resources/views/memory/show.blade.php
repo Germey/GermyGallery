@@ -104,13 +104,26 @@
                     </div>
                     <div class="ibox-content">
 
-                        <h3><a data-url="{{ url('/manage/memory/update-info') }}"
+                        <p>
+                            <i class="fa fa-fire"></i><strong>标题</strong>
+                        </p>
+
+                        <p>
+                            <a data-url="{{ url('/manage/memory/update-info') }}"
                                data-type="text"
                                data-pk="{{ $memory->id }}" data-placement="right"
                                data-placeholder="记忆标题"
                                data-title="输入记忆标题"
                                data-name="title"
-                               class="editable">{{ $memory->title}}</a></h3>
+                               class="editable">{{ $memory->title}}</a>
+                        </p>
+
+                        <div class="hr-line-dashed m-t-sm m-b-sm"></div>
+                        <p>
+
+                            <i class="fa fa-magic"></i><strong>描述</strong>
+                        </p>
+
 
                         <p>
                             <a data-type="textarea" data-url="{{ url('/manage/memory/update-info') }}"
@@ -118,9 +131,14 @@
                                data-name="description"
                                class="editable">{{ $memory->description }}</a>
                         </p>
+
+                        <div class="hr-line-dashed m-t-sm m-b-sm"></div>
+
                         @if($memory->location)
                             <p>
-                                <i class="fa fa-map-marker"></i>
+                                <i class="fa fa-map-marker"></i><strong>地点</strong>
+                            </p>
+                            <p>
                                 <a data-url="{{ url('/manage/memory/update-info') }}"
                                    data-type="text"
                                    data-pk="{{ $memory->id }}" data-placement="right"
@@ -129,13 +147,22 @@
                                    data-name="location"
                                    class="editable">{{ $memory->location}}</a>
                             </p>
+                            <div class="hr-line-dashed m-t-sm m-b-sm"></div>
+
                         @endif
+                        <p>
+                            <i class="fa fa-map-marker"></i><strong>开始时间</strong>
+                        </p>
                         <p>
                             <a data-name="date_start" data-type="combodate" data-value="{{ $memory->date_start }}"
                                data-format="YYYY-MM-DD" data-viewformat="YYYY-MM-DD"
                                data-template="YYYY 年 MM 月 DD" data-pk="{{ $memory->id }}"
                                data-title="开始时间" data-url="{{ url('/manage/memory/update-info') }}"
                                class="editable">{{ $memory->date_start }}</a>
+                        </p>
+
+                        <p>
+                            <i class="fa fa-map-marker"></i><strong>圆满时间</strong>
                         </p>
                         <p>
                             <a data-name="date_end" data-type="combodate" data-value="{{ $memory->date_end }}"
