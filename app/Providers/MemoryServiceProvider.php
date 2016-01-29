@@ -34,16 +34,20 @@ class MemoryServiceProvider extends ServiceProvider
     private function composeMemoryTags()
     {
         View::composer([
-            'memory.show',
+            'memory.show'
         ], function ($view) {
-            $unique_tags = [];
-            $memory_tags = Memory::all()->lists('tags');
-            foreach ($memory_tags as $tag_item) {
-                if ($tag_item)
-                    $unique_tags = array_unique(array_merge($unique_tags, explode(',', $tag_item)));
-            }
+            $unique_tags = $this->getAllTags();
             $view->with([
                 'memory_tags' => Response::json($unique_tags)->getContent()
+            ]);
+        });
+        View::composer([
+            'memory.create'
+        ], function ($view) {
+            $unique_tags = $this->getAllTags();
+            $unique_tags = array_key_equal_value($unique_tags);
+            $view->with([
+                'memory_tags' => $unique_tags
             ]);
         });
     }
@@ -73,6 +77,23 @@ class MemoryServiceProvider extends ServiceProvider
                 'happiness' => $happiness
             ]);
         });
+    }
+
+
+    /**
+     * Get all unique tags.
+     *
+     * @return array
+     */
+    private function getAllTags()
+    {
+        $unique_tags = [];
+        $memory_tags = Memory::all()->lists('tags');
+        foreach ($memory_tags as $tag_item) {
+            if ($tag_item)
+                $unique_tags = array_unique(array_merge($unique_tags, explode(',', $tag_item)));
+        }
+        return $unique_tags;
     }
 
 

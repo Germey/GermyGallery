@@ -66,16 +66,6 @@ class MemoryController extends Controller
         Return View::make('memory.show')->withMemory($memory);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return Response
-     */
-    public function edit($id)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.

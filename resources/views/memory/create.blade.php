@@ -60,6 +60,13 @@
                                 <span class="help-block m-b-none">超开心?那是有多开心?</span>
                             </div>
                         </div>
+                        <div class="form-group">
+                            {!! Form::label('tags[]', '标签', ['class' => 'col-sm-2 control-label']) !!}
+                            <div class="col-sm-2">
+                                {!! Form::select('tags[]', $memory_tags, null, ['class' => 'form-control', 'id' => 'tags', 'multiple' => 'multiple']) !!}
+                                <span class="help-block m-b-none">为这份记忆添加一个标签吧~</span>
+                            </div>
+                        </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <div class="col-md-12 text-center">
@@ -90,4 +97,12 @@
 
     @include('support.datepicker')
     @include('support.uploadifymul')
+    @include('support.select2')
+    <script>
+        $(function() {
+            $("#tags").select2({
+                tags: true
+            })
+        });
+    </script>
 @endsection

@@ -190,6 +190,9 @@
                                data-url="{{ url('/manage/memory/update-info') }}" data-name="tags"
                                data-title="选择或输入分类" class="editable">{{ $memory->tags }}</a>
                         </p>
+
+                        <div class="hr-line-dashed m-t-sm m-b-sm"></div>
+
                         <p>
                             <i class="fa fa-heart"></i><strong>幸福指数</strong>
                         </p>

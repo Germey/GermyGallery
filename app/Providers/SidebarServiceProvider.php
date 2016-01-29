@@ -85,7 +85,7 @@ class SidebarServiceProvider extends ServiceProvider
     {
         return [
             ['path' => '/', 'text' => '首页', 'icon' => 'home'],
-            ['path' => 'memory', 'text' => '事件管理', 'icon' => 'flag-o'],
+            ['path' => 'memory', 'text' => '记忆管理', 'icon' => 'flag-o'],
         ];
     }
 
