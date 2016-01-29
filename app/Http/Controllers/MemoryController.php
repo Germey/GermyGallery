@@ -92,9 +92,14 @@ class MemoryController extends Controller
      * @param  int $id
      * @return Response
      */
-    public function destroy($id)
+    public function destroy(Memory $memory)
     {
-        //
+        if ($memory->delete()) {
+            Flash::success('删除成功');
+            Return Redirect::to('/manage/memory');
+        }
+        Flash::error('删除失败');
+        Return Redirect::to('/manage/memory');
     }
 
     /**

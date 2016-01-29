@@ -11,7 +11,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <dl class="dl-horizontal">
-                                    <dt>类别：</dt>
+                                    <dt>标签：</dt>
                                     <dd>
                                         @if($tags = $memory->tags)
                                             @foreach(explode(',', $tags) as $tag)
