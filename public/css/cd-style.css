@@ -43,7 +43,7 @@ img {
     position: absolute;
     top: 0;
     left: 18px;
-    height: 100%;
+    height: 110%;
     width: 4px;
     background: #d7e4ed;
 }
@@ -61,7 +61,7 @@ img {
 }
 
 .cd-item {
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 .cd-timeline-block {
@@ -158,7 +158,7 @@ img {
     margin-left: 60px;
     background: white;
     border-radius: 0.25em;
-    padding: 1em;
+    padding: 1em 1em 1.5em 1.5em;
     box-shadow: 0 3px 0 #d7e4ed;
 }
 
@@ -170,6 +170,7 @@ img {
 
 .cd-timeline-content h2 {
     color: #303e49;
+    margin: 1em 0;
 }
 
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -182,7 +183,6 @@ img {
 }
 
 .cd-timeline-content p {
-    margin: 1em 0;
     line-height: 1.6;
 }
 
@@ -238,6 +238,15 @@ a.cd-read-more:hover {
 }
 
 @media only screen and (min-width: 1170px) {
+
+    .cd-timeline-content h2 {
+        margin: 0;
+    }
+
+    .cd-timeline-content p {
+        margin: 1em 0
+    }
+
     .cd-timeline-content {
         margin-left: 0;
         padding: 1.6em;
