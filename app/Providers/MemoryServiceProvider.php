@@ -14,6 +14,7 @@ class MemoryServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->composeHappiness();
         $this->composeMemoryTags();
     }
 
@@ -46,5 +47,33 @@ class MemoryServiceProvider extends ServiceProvider
             ]);
         });
     }
+
+    /**
+     *  compose happiness variable.
+     */
+    private function composeHappiness()
+    {
+        View::composer([
+            'memory.show',
+        ], function ($view) {
+            for ($i = 0; $i <= 100; $i ++) {
+                $happiness[$i] = $i;
+            }
+            $view->with([
+                'happiness' => Response::json($happiness)->getContent()
+            ]);
+        });
+        View::composer([
+            'memory.create',
+        ], function ($view) {
+            for ($i = 100; $i >= 0; $i --) {
+                $happiness[$i] = $i;
+            }
+            $view->with([
+                'happiness' => $happiness
+            ]);
+        });
+    }
+
 
 }

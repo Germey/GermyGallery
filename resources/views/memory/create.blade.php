@@ -72,8 +72,8 @@
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             {!! Form::label('happiness', '幸福程度', ['class' => 'col-sm-2 control-label']) !!}
-                            <div class="col-sm-10">
-                                {!! Form::text('happiness', null, ['class' => 'form-control']) !!}
+                            <div class="col-sm-2">
+                                {!! Form::select('happiness', $happiness, null, ['class' => 'form-control']) !!}
                                 <span class="help-block m-b-none">帮助文本，可能会超过一行，以块级元素显示</span>
                             </div>
                         </div>

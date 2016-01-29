@@ -190,6 +190,16 @@
                                data-url="{{ url('/manage/memory/update-info') }}" data-name="tags"
                                data-title="选择或输入分类" class="editable">{{ $memory->tags }}</a>
                         </p>
+                        <p>
+                            <i class="fa fa-heart"></i><strong>幸福指数</strong>
+                        </p>
+
+                        <p>
+                            <a data-name="happiness" data-type="select" data-value="{{ $memory->happiness }}"
+                               data-pk="{{ $memory->id }}" data-title="幸福指数"
+                               data-url="{{ url('/manage/memory/update-info') }}"
+                               class="editable" id="editable-happiness">{{ $memory->happiness }}</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -205,6 +215,9 @@
                     tags: eval({!! $memory_tags !!}),
                     tokenSeparators: [",", " "]
                 }
+            });
+            $('#editable-happiness').editable({
+                source: '{!! $happiness !!}'
             });
             $('.editable').editable();
             $('#memory-show').on('click', '.edit-info', function() {
