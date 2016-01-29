@@ -1,21 +1,26 @@
 <?php namespace App\Providers;
 
 use App\Model\Memory;
+use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
 use View, Response;
 
 class MemoryServiceProvider extends ServiceProvider
 {
 
+    private $request;
+
     /**
      * Bootstrap the application services.
      *
      * @return void
      */
-    public function boot()
+    public function boot(Request $request)
     {
+        $this->request = $request;
         $this->composeHappiness();
         $this->composeMemoryTags();
+        $this->composeUrlPara($request);
     }
 
     /**
@@ -79,6 +84,19 @@ class MemoryServiceProvider extends ServiceProvider
         });
     }
 
+    /**
+     *  compose url para.
+     */
+    private function composeUrlPara()
+    {
+        View::composer([
+            'memory.index',
+        ], function ($view) {
+            $view->with([
+                'paras' => get_url_para($this->request)
+            ]);
+        });
+    }
 
     /**
      * Get all unique tags.

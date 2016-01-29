@@ -23,6 +23,21 @@ class Memory extends Model
     }
 
     /**
+     * Get first tag.
+     *
+     * @return null
+     */
+    public function getFirstTag()
+    {
+        $tags = $this->getAttribute('tags');
+        if ($tags) {
+            $tags = explode(',', $tags);
+            return $tags[0];
+        }
+        return null;
+    }
+
+    /**
      * Tags array to string.
      *
      * @param $tags

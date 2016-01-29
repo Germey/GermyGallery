@@ -16,16 +16,19 @@
                     <div class="ibox-content">
                         <div class="row m-b-sm m-t-sm">
                             <div class="col-md-1">
-                                <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i
+                                <a class="btn btn-white btn-sm" href="{{ url('/manage/memory') }}"><i
                                             class="fa fa-refresh"></i> 刷新
-                                </button>
+                                </a>
                             </div>
                             <div class="col-md-11">
+                                {!! Form::open(['method' => 'GET']) !!}
                                 <div class="input-group">
-                                    <input type="text" placeholder="请输入名称" class="input-sm form-control"> <span
-                                            class="input-group-btn">
-                                        <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                                    {!! Form::text('title', @$paras['title'], ['class' => 'input-sm form-control', 'placeholder' => '输入记忆名称搜索']) !!}
+                                    <span class="input-group-btn">
+                                        {!! Form::submit('搜索',['class' => 'btn btn-sm btn-primary']) !!}
+                                    </span>
                                 </div>
+                                {!! Form::close() !!}
                             </div>
                         </div>
 
@@ -35,10 +38,8 @@
                                 @foreach($memories as $memory)
                                     <tr>
                                         <td class="project-status col-md-1">
-                                            @if($tags = $memory->tags)
-                                                @foreach(explode(',', $tags) as $tag)
-                                                    <span class="label label-primary">{{ $tag }}</span>
-                                                @endforeach
+                                            @if($tag = $memory->getFirstTag())
+                                                <span class="label label-primary tag-list">{{ $tag }}</span>
                                             @endif
                                         </td>
                                         <td class="project-title">
@@ -67,6 +68,7 @@
                                                 <i class="fa fa-angle-double-right"></i>详情
                                             </a>
                                             {!! Form::open(['url' => '/manage/memory/'.$memory->id, 'method' => 'DELETE', 'class' => 'inline']) !!}
+                                            {!! Form::hidden('para_string', http_build_query($paras)) !!}
                                             <button class="btn btn-danger btn-sm"><i class="fa fa-remove"></i>删除
                                             </button>
                                             {!! Form::close() !!}
@@ -75,6 +77,12 @@
                                 @endforeach
                                 </tbody>
                             </table>
+                            <div class="text-right">
+                                <p>当前第{{ $memories->currentPage() }}页，共{{ $memories->lastPage() }}页</p>
+                            </div>
+                            <div class="pagination pull-right">
+                                {!!  $memories->setPath('/manage/memory')->appends($paras)->render() !!}
+                            </div>
                         </div>
                     </div>
                 </div>

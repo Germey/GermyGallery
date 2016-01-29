@@ -18,9 +18,11 @@ class MemoryController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return View::make('memory.index')->withMemories(Memory::all());
+        $title = $request->get('title', '');
+        $memories = Memory::where('title', 'like', '%' . $title . '%')->orderBy('date_start', 'desc')->paginate(10);
+        return View::make('memory.index')->withMemories($memories);
     }
 
     /**
@@ -80,7 +82,7 @@ class MemoryController extends Controller
         $this->saveImages($images, $memory);
         if ($memory->getImages) {
             Flash::success('更新成功');
-            Return Redirect::to('/manage/memory/'.$memory->id);
+            Return Redirect::to('/manage/memory/' . $memory->id);
         }
         Flash::error('保存失败');
         Return Redirect::back();
@@ -92,14 +94,14 @@ class MemoryController extends Controller
      * @param  int $id
      * @return Response
      */
-    public function destroy(Memory $memory)
+    public function destroy(Memory $memory, Request $request)
     {
         if ($memory->delete()) {
             Flash::success('删除成功');
-            Return Redirect::to('/manage/memory');
+            Return Redirect::to('/manage/memory?'.$request->get('para_string'));
         }
         Flash::error('删除失败');
-        Return Redirect::to('/manage/memory');
+        Return Redirect::back();
     }
 
     /**
