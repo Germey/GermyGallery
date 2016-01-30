@@ -22,16 +22,18 @@
         <div class="tab-content">
             <div id="tab-1" class="tab-pane active">
                 <div class="sidebar-title">
-                    <h3> <i class="fa fa-comments-o"></i> 主题设置</h3>
+                    <h3><i class="fa fa-comments-o"></i> 主题设置</h3>
                     <small><i class="fa fa-tim"></i> 你可以从这里选择和预览主题的布局和样式，这些设置会被保存在本地，下次打开的时候会直接应用这些设置。</small>
                 </div>
-                <div class="skin-setttings">
+                <div class="skin-settings">
                     <div class="title">主题设置</div>
                     <div class="setings-item">
                         <span>收起左侧菜单</span>
+
                         <div class="switch">
                             <div class="onoffswitch">
-                                <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="collapsemenu">
+                                <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
+                                       id="collapsemenu">
                                 <label class="onoffswitch-label" for="collapsemenu">
                                     <span class="onoffswitch-inner"></span>
                                     <span class="onoffswitch-switch"></span>
@@ -68,33 +70,34 @@
                         </div>
                     </div>
                     <div class="title">皮肤选择</div>
-                    <div class="setings-item default-skin nb">
+                    <div class="setings-item choose-skin default-skin nb" data-name="default-skin">
                                 <span class="skin-name ">
-                         <a href="#" class="s-skin-0">
+                         <a href="#" class=" s-skin-0">
                              默认皮肤
                          </a>
                     </span>
                     </div>
-                    <div class="setings-item blue-skin nb">
+                    <div class="setings-item choose-skin blue-skin nb" data-name="blue-skin">
                                 <span class="skin-name ">
                         <a href="#" class="s-skin-1">
                             蓝色主题
                         </a>
                     </span>
                     </div>
-                    <div class="setings-item yellow-skin nb">
+                    <div class="setings-item choose-skin yellow-skin nb" data-name="yellow-skin">
                                 <span class="skin-name ">
                         <a href="#" class="s-skin-3">
-                            黄色/紫色主题
+                            黄色主题
                         </a>
                     </span>
+                        {!! Form::token() !!}
                     </div>
                 </div>
             </div>
             <div id="tab-2" class="tab-pane">
 
                 <div class="sidebar-title">
-                    <h3> <i class="fa fa-comments-o"></i> 最新通知</h3>
+                    <h3><i class="fa fa-comments-o"></i> 最新通知</h3>
                     <small><i class="fa fa-tim"></i> 您当前有10条未读信息</small>
                 </div>
 
@@ -222,7 +225,7 @@
             <div id="tab-3" class="tab-pane">
 
                 <div class="sidebar-title">
-                    <h3> <i class="fa fa-cube"></i> 最新任务</h3>
+                    <h3><i class="fa fa-cube"></i> 最新任务</h3>
                     <small><i class="fa fa-tim"></i> 您当前有14个任务，10个已完成</small>
                 </div>
 
@@ -313,4 +316,20 @@
 
     </div>
 </div>
+<script>
+    $(function() {
+        $('.skin-settings').on('click', '.choose-skin', function() {
+            $(this).find('a').trigger('click');
+            $.post('/manage/config/skin', {
+                'key': 'skin',
+                'value': $(this).data('name'),
+                '_token': $('input[name="_token"]').val(),
+            }, function() {
+            });
+        });
+        setTimeout(function() {
+            $('.' + '{!! $skin !!}').find('a').trigger('click');
+        }, 10);
+    });
+</script>
 <!--右侧边栏结束-->

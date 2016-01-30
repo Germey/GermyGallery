@@ -26,4 +26,3 @@ jQuery.fn.extend({
         return this;
     }
 });
-

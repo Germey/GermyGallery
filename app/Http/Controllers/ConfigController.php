@@ -3,11 +3,13 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ConfigRequest;
+use Illuminate\Support\Facades\Response;
 use Redirect, View, Flash;
 use App\Model\Config;
 use Illuminate\Http\Request;
 
-class ConfigController extends Controller {
+class ConfigController extends Controller
+{
 
     private $config_items = [
         'title',
@@ -54,11 +56,26 @@ class ConfigController extends Controller {
     public function postUpdate(ConfigRequest $request)
     {
         $configs = $request->all();
-        foreach($configs as $key => $value) {
+        foreach ($configs as $key => $value) {
             Config::where('key', '=', $key)->update(['value' => $value]);
         }
         Flash::success('修改成功！');
         return Redirect::to('/manage/config/edit');
     }
 
+
+    /**
+     * Change skin.
+     *
+     * @param Request $request
+     */
+    public function postSkin(Request $request)
+    {
+        $skin = $request->get('value', 'default-skin');
+        if (Config::where('key', 'skin')->update(['value' => $skin])) {
+            return Response::json([
+                'status' => 1
+            ]);
+        }
+    }
 }

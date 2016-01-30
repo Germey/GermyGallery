@@ -10,7 +10,6 @@ use Illuminate\Http\Request;
 
 class TokenController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -43,39 +42,6 @@ class TokenController extends Controller
             return Redirect::to('/manage/token');
         }
 
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  int $id
-     * @return Response
-     */
-    public function update($id)
-    {
-        //
     }
 
     /**

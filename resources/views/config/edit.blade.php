@@ -33,7 +33,7 @@
                                             </div>
                                         @elseif($config['type'] == 'select')
                                             <div class="col-sm-3">
-                                                {!! Form::select($config['key'], @$select_items[$config['key']], $config['value'], ['class' => 'form-control']) !!}
+                                                {!! Form::select($config['key'], $select_items[$config['key']], $config['value'], ['class' => 'form-control']) !!}
                                             </div>
                                         @elseif($config['type'] == 'pic')
                                             <div class="col-sm-8">

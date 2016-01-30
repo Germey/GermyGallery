@@ -66,3 +66,7 @@ input[readonly] {
 .tag-list {
     line-height: 2;
 }
+
+.choose-skin {
+    cursor: pointer;
+}

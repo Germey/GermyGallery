@@ -35,6 +35,7 @@ class ConfigServiceProvider extends ServiceProvider
         $this->composeConfigItems();
         $this->composeUrlPara();
         $this->composeAuthKind();
+        $this->composeSkin();
     }
 
     /**
@@ -50,10 +51,7 @@ class ConfigServiceProvider extends ServiceProvider
         View::composer(['config.edit'], function ($view) {
             $view->with([
                 'select_items' => [
-                    'is_open' => [
-                        '1' => '开放',
-                        '0' => '需密钥',
-                    ]
+                    'is_open' => Config::getConfigValueByKey('open_map')
                 ]
             ]);
         });
@@ -85,6 +83,20 @@ class ConfigServiceProvider extends ServiceProvider
         ], function ($view) {
             $view->with([
                 'auth_kind' => Config::getConfigValueByKey('auth_kind')
+            ]);
+        });
+    }
+
+    /**
+     *  compose skin.
+     */
+    private function composeSkin()
+    {
+        View::composer([
+            'manage.options',
+        ], function ($view) {
+            $view->with([
+                'skin' => Config::getConfigValueByKey('skin')
             ]);
         });
     }
