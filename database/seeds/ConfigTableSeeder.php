@@ -101,6 +101,11 @@
                     '0' => '需密钥',
                 ],
             ]);
+            Config::create([
+                'type' => 'site',
+                'key' => 'skin',
+                'value' => 'blue-skin'
+            ]);
         }
 
     }
