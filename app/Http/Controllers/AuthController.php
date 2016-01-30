@@ -29,7 +29,7 @@ class AuthController extends Controller
      */
     public function postIndex(TokenRequest $request)
     {
-        $token = $request->get('token');
+        $token = $request->get('value');
         $user = Token::where('value', $token)->first();
         if ($user) {
             Session::put('user', $user->kind);

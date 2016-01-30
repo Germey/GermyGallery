@@ -22,7 +22,7 @@ class TokenRequest extends Request {
 	public function rules()
 	{
 		return [
-			'token' => 'required'
+			'value' => 'required'
 		];
 	}
 

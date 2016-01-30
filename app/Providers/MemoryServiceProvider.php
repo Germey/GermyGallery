@@ -20,7 +20,6 @@ class MemoryServiceProvider extends ServiceProvider
         $this->request = $request;
         $this->composeHappiness();
         $this->composeMemoryTags();
-        $this->composeUrlPara($request);
     }
 
     /**
@@ -80,20 +79,6 @@ class MemoryServiceProvider extends ServiceProvider
             }
             $view->with([
                 'happiness' => $happiness
-            ]);
-        });
-    }
-
-    /**
-     *  compose url para.
-     */
-    private function composeUrlPara()
-    {
-        View::composer([
-            'memory.index',
-        ], function ($view) {
-            $view->with([
-                'paras' => get_url_para($this->request)
             ]);
         });
     }

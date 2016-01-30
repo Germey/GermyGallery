@@ -85,6 +85,7 @@ class SidebarServiceProvider extends ServiceProvider
             ['path' => '/', 'text' => '首页', 'icon' => 'home'],
             ['path' => 'memory', 'text' => '记忆管理', 'icon' => 'flag-o'],
             ['path' => 'config', 'text' => '站点设置', 'icon' => 'gear'],
+            ['path' => 'token', 'text' => '密钥设置', 'icon' => 'key'],
         ];
     }
 

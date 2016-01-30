@@ -1,11 +1,14 @@
 <?php namespace App\Providers;
 
 use App\Model\Config;
+use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
 use View;
 
 class ConfigServiceProvider extends ServiceProvider
 {
+
+    private $request;
 
     /**
      * Overwrite any vendor / package configuration.
@@ -26,9 +29,12 @@ class ConfigServiceProvider extends ServiceProvider
     /**
      * Config boot.
      */
-    public function boot()
+    public function boot(Request $request)
     {
+        $this->request = $request;
         $this->composeConfigItems();
+        $this->composeUrlPara();
+        $this->composeAuthKind();
     }
 
     /**
@@ -52,5 +58,37 @@ class ConfigServiceProvider extends ServiceProvider
             ]);
         });
     }
+
+    /**
+     *  compose url para.
+     */
+    private function composeUrlPara()
+    {
+        View::composer([
+            'memory.index',
+            'token.index',
+        ], function ($view) {
+            $view->with([
+                'paras' => get_url_para($this->request)
+            ]);
+        });
+    }
+
+
+    /**
+     *  compose auth kind.
+     */
+    private function composeAuthKind()
+    {
+        View::composer([
+            'token.create',
+        ], function ($view) {
+            $view->with([
+                'auth_kind' => Config::getConfigValueByKey('auth_kind')
+            ]);
+        });
+    }
+
+
 
 }

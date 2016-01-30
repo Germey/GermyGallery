@@ -13,6 +13,7 @@
 
 
     Route::model('memory', 'App\Model\Memory');
+    Route::model('token', 'App\Model\Token');
 
     Route::group(['middleware' => 'guest'], function () {
         Route::get('/', 'DisplayController@index');
@@ -29,6 +30,7 @@
         Route::resource('memory', 'MemoryController');
         Route::controller('memory', 'MemoryController');
         Route::controller('config', 'ConfigController');
+        Route::resource('token', 'TokenController');
     });
 
     Route::controller('auth', 'AuthController');

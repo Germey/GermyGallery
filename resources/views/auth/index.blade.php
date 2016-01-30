@@ -36,7 +36,7 @@
         <p>请输入密钥</p>
         {!! Form::open(['url' => '/auth/', 'role' => 'form', 'class' => 'm-t']) !!}
             <div class="form-group">
-                {!! Form::password('token', null, ['class' => 'form-control', 'required' => 'required', 'placeholder' => '请输入管理密钥']) !!}
+                {!! Form::password('value', null, ['class' => 'form-control', 'required' => 'required', 'placeholder' => '请输入管理密钥']) !!}
             </div>
             <button type="submit" class="btn btn-primary block full-width">认证</button>
         {!! Form::close() !!}
