@@ -18,7 +18,8 @@ class ConfigController extends Controller {
         'title_color',
         'description_color',
         'date_color',
-        'bg_img'
+        'bg_img',
+        'is_open',
     ];
 
     /**

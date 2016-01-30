@@ -32,15 +32,23 @@ class ConfigServiceProvider extends ServiceProvider
     }
 
     /**
-     *
-     *
-     * Compose sidebar variable.
+     * Compose config variable.
      */
     private function composeConfigItems()
     {
         View::composer(['display.show', 'auth.index'], function ($view) {
             $view->with([
                 'configs' => Config::all()->lists('value', 'key')
+            ]);
+        });
+        View::composer(['config.edit'], function ($view) {
+            $view->with([
+                'select_items' => [
+                    'is_open' => [
+                        '1' => '开放',
+                        '0' => '需密钥',
+                    ]
+                ]
             ]);
         });
     }
