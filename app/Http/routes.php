@@ -14,9 +14,12 @@
 
     Route::model('memory', 'App\Model\Memory');
 
-    Route::get('/', 'DisplayController@index');
+    Route::group(['middleware' => 'auth'], function() {
+        Route::get('/', 'DisplayController@index');
+        Route::controller('upload', 'UploadController');
+    });
 
-    Route::group(['prefix' => 'manage'], function () {
+    Route::group(['prefix' => 'manage', 'middleware' => 'auth'], function () {
         Route::get('/', function() {
            return Redirect::to('/manage/memory');
         });
@@ -25,6 +28,5 @@
         Route::controller('config', 'ConfigController');
     });
 
-    Route::controller('upload', 'UploadController');
-
+    Route::controller('auth', 'AuthController');
 

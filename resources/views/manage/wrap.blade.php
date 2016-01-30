@@ -92,12 +92,12 @@
                         </ul>
                     </li>
                     <li class="hidden-xs">
-                        <a href="index_v1.html" class="J_menuItem" data-index="0"><i class="fa fa-cart-arrow-down"></i>
-                            购买</a>
+                        <a href="/auth/logout"><i class="fa fa-sign-out"></i>
+                        登出</a>
                     </li>
                     <li class="dropdown hidden-xs">
                         <a class="right-sidebar-toggle" aria-expanded="false">
-                            <i class="fa fa-tasks"></i> 主题
+                            <i class="fa fa-tasks"></i>个性
                         </a>
                     </li>
                 </ul>
