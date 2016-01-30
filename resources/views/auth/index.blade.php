@@ -17,6 +17,8 @@
     {!! Html::style('/css/plugins/font-awesome/font-awesome.min.css') !!}
     {!! Html::style('/css/animate.min.css') !!}
     {!! Html::style('/css/style.css') !!}
+    {!! Html::script('/js/jquery.min.js') !!}
+    {!! Html::script('/js/bootstrap.min.js') !!}
 
 </head>
 
@@ -31,7 +33,7 @@
             <img alt="image" class="img-circle circle-border" src="/img/a1.jpg">
         </div>
         <h3></h3>
-        <p>请输入管理密钥</p>
+        <p>请输入密钥</p>
         {!! Form::open(['url' => '/auth/', 'role' => 'form', 'class' => 'm-t']) !!}
             <div class="form-group">
                 {!! Form::password('token', null, ['class' => 'form-control', 'required' => 'required', 'placeholder' => '请输入管理密钥']) !!}
@@ -40,8 +42,7 @@
         {!! Form::close() !!}
     </div>
 </div>
-{!! Html::script('/js/jquery.min.js') !!}
-{!! Html::script('/js/bootstrap.min.js') !!}
+
 </body>
 
 </html>

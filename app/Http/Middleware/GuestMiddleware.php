@@ -4,7 +4,7 @@ use Closure;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 
-class AuthMiddleware {
+class GuestMiddleware {
 
 	/**
 	 * Handle an incoming request.
@@ -15,11 +15,10 @@ class AuthMiddleware {
 	 */
 	public function handle($request, Closure $next)
 	{
-        if (! Session::has('auth')) {
+        if (! Session::has('user')) {
             return Redirect::to('/auth');
         }
 		return $next($request);
 	}
-
 
 }

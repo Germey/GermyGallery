@@ -115,6 +115,7 @@ return [
         'description_color' => '描述文本颜色',
         'date_color' => '日期颜色',
         'bg_img' => '背景图片',
+        'token' => '密钥',
     ],
 
 ];

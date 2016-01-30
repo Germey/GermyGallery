@@ -16,6 +16,7 @@ class CreateTokensTable extends Migration {
 		{
             $table->increments('id');
             $table->string('value');
+            $table->string('kind');
             $table->timestamps();
 		});
 	}

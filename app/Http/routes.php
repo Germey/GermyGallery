@@ -14,14 +14,17 @@
 
     Route::model('memory', 'App\Model\Memory');
 
-    Route::group(['middleware' => 'auth'], function() {
+    Route::group(['middleware' => 'guest'], function () {
         Route::get('/', 'DisplayController@index');
+    });
+
+    Route::group(['middleware' => 'admin'], function () {
         Route::controller('upload', 'UploadController');
     });
 
-    Route::group(['prefix' => 'manage', 'middleware' => 'auth'], function () {
-        Route::get('/', function() {
-           return Redirect::to('/manage/memory');
+    Route::group(['prefix' => 'manage', 'middleware' => 'admin'], function () {
+        Route::get('/', function () {
+            return Redirect::to('/manage/memory');
         });
         Route::resource('memory', 'MemoryController');
         Route::controller('memory', 'MemoryController');

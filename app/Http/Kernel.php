@@ -24,7 +24,8 @@ class Kernel extends HttpKernel {
 	 * @var array
 	 */
 	protected $routeMiddleware = [
-		'auth' => 'App\Http\Middleware\AuthMiddleware',
+		'admin' => 'App\Http\Middleware\AdminMiddleware',
+		'guest' => 'App\Http\Middleware\GuestMiddleware',
 	];
 
 }

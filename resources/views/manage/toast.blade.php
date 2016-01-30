@@ -38,4 +38,9 @@
             alert('{!! $error_text !!}', 'error');
         </script>
     @endif
+    <style>
+        .toast ul {
+            list-style:none;
+        }
+    </style>
 </div>
