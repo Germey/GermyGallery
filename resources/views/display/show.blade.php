@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TimeGallery</title>
+    <title>{{ $configs['title'] }} | {{ $configs['description'] }}</title>
     {!! Html::style('/css/main.css') !!}
     {!! Html::style('/css/cd-style.css') !!}
     {!! Html::style('/css/photo-anim.css') !!}
@@ -11,7 +11,8 @@
 </head>
 
 <body>
-<div class="fix-bg blur" style="background: url('/img/background.jpg')">
+@define $bg_img = $configs['bg_img'] ? $configs['bg_img'] : '/img/background.jpg'
+<div class="fix-bg blur" style="background: url('{!! $bg_img !!}')">
 </div>
 <div class="cd-content">
     <section id="cd-timeline" class="cd-container">
@@ -53,25 +54,21 @@
 <!--</div>-->
 <style>
 
-    .cd-timeline-content {
-        background-color: rgba(255, 255, 255, 0.3);
-        box-shadow: 0 3px 0 rgba(255, 255, 255, 0.3);
-    }
 
     .cd-timeline-img {
-        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 0 0 4px {!! $configs['icon_border_color'] !!}, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
     }
 
     #cd-timeline::before {
-        background: rgba(255, 255, 255, 0.3);
+        background: {!! $configs['bar_color'] !!};
     }
 
     .cd-date {
-        color: #EEE;
+        color: {!! $configs['date_color'] !!};
     }
 
     .cd-timeline-content h2 {
-        color: #eee;
+        color: {!! $configs['title_color'] !!};
     }
 
     .cd-timeline-img img {
@@ -79,22 +76,29 @@
     }
 
     .cd-timeline-content p {
-        color: #F1F1F1;
+        color: {!! $configs['description_color'] !!};
     }
 
+    /* content */
+    .cd-timeline-content {
+        background-color: {!! $configs['panel_color'] !!};
+        box-shadow: 0 3px 0 {!! $configs['panel_color'] !!};
+    }
+
+    /* tri */
     @media only screen and (max-width: 1169px) {
         .cd-timeline-content::before {
-            border-right: 7px solid rgba(255, 255, 255, 0.3);;
+            border-right: 7px solid {!! $configs['panel_color'] !!};
         }
     }
 
     @media only screen and (min-width: 1170px) {
         .cd-item:nth-child(even) .cd-timeline-block .cd-timeline-content::before {
-            border-right-color: rgba(255, 255, 255, 0.3);
+            border-right-color: {!! $configs['panel_color'] !!};
         }
 
         .cd-timeline-content::before {
-            border-left-color: rgba(255, 255, 255, 0.3);
+            border-left-color: {!! $configs['panel_color'] !!};
         }
     }
 

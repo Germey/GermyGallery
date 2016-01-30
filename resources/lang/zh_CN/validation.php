@@ -108,6 +108,13 @@ return [
         'date_start' => '时间',
         'location' => '地点',
         'happiness' => '幸福程度',
+        'bar_color' => '时间轴颜色',
+        'icon_border_color' => '图标边缘颜色',
+        'panel_color' => '面板颜色',
+        'title_color' => '标题颜色',
+        'description_color' => '描述文本颜色',
+        'date_color' => '日期颜色',
+        'bg_img' => '背景图片',
     ],
 
 ];
