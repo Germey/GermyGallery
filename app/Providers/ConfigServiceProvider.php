@@ -43,7 +43,7 @@ class ConfigServiceProvider extends ServiceProvider
      */
     private function composeConfigItems()
     {
-        View::composer(['display.show', 'auth.index'], function ($view) {
+        View::composer(['display.show', 'auth.index', 'manage.layout', 'manage.wrap'], function ($view) {
             $view->with([
                 'configs' => Config::all()->lists('value', 'key')
             ]);
