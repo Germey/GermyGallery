@@ -7,6 +7,10 @@
 
 .cd-timeline-img:hover img {
     transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
 }
 
 .cd-timeline-block, .cd-timeline-content {
@@ -18,12 +22,20 @@
 
 @media only screen and (max-width: 1169px) {
     .cd-timeline-block:hover .cd-timeline-content {
-        transform: rotateY(360deg);
+        transform: rotateZ(360deg) rotateY(360deg);
+        -ms-transform: rotateZ(360deg) rotateY(360deg);
+        -moz-transform: rotateZ(360deg) rotateY(360deg);
+        -webkit-transform: rotateZ(360deg) rotateY(360deg);
+        -o-transform: rotateZ(360deg) rotateY(360deg);
     }
 }
 
 @media only screen and (min-width: 1170px) {
     .cd-item:hover .cd-timeline-block {
-        transform: rotateY(360deg);
+        transform: rotateZ(360deg) rotateY(360deg);
+        -ms-transform: rotateZ(360deg) rotateY(360deg);
+        -moz-transform: rotateZ(360deg) rotateY(360deg);
+        -webkit-transform: rotateZ(360deg) rotateY(360deg);
+        -o-transform: rotateZ(360deg) rotateY(360deg);
     }
 }

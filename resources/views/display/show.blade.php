@@ -10,10 +10,8 @@
     {!! Html::style('/css/anim.css') !!}
 </head>
 
-<body>
 @define $bg_img = $configs['bg_img'] ? $configs['bg_img'] : '/img/background.jpg'
-<div class="fix-bg blur" style="background: url('{!! $bg_img !!}')">
-</div>
+<body class="fix-bg" style="background-image: url('{!! $bg_img !!}')">
 <div class="cd-content">
     <section id="cd-timeline" class="cd-container">
         @foreach($memories as $memory)
@@ -49,6 +47,9 @@
         @endforeach
     </section>
 </div>
+{!! Html::script('/js/jquery.min.js') !!}
+{!! Html::script('/js/bootstrap.min.js') !!}
+{!! Html::script('/js/anim.js') !!}
 <!--<div id="footer">-->
 <!--<p>Powered by helloweba.com 允许转载、修改和使用本站的DEMO，但请注明出处：<a href="http://www.helloweba.com">www.helloweba.com</a></p>-->
 <!--</div>-->
