@@ -17,9 +17,10 @@ class AuthController extends Controller
      *
      * @return mixed
      */
-    public function getIndex()
+    public function getIndex(Request $request)
     {
-        return View::make('auth.index');
+        $token = $request->get('token', '');
+        return View::make('auth.index')->withToken($token);
     }
 
     /**
