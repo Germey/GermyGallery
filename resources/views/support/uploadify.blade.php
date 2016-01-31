@@ -33,7 +33,7 @@
                     'fileTypeDesc': 'Image Files',
                     'fileTypeExts': '*.gif; *.jpg; *.png',
                     'buttonText': '<i class="fa fa-upload"></i>上传图片',
-                    'fileSizeLimit': '2MB',
+                    'fileSizeLimit': '10MB',
                     'swf': '/swf/uploadify.swf',
                     'uploader': '/upload/img',
                     'onUploadSuccess': function(data, response) {
