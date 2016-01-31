@@ -7,6 +7,7 @@
     {!! Html::style('/css/main.css') !!}
     {!! Html::style('/css/cd-style.css') !!}
     {!! Html::style('/css/photo-anim.css') !!}
+    {!! Html::style('/css/anim-init.css') !!}
     {!! Html::style('/css/anim.css') !!}
 </head>
 
@@ -50,7 +51,7 @@
 {!! Html::script('/js/jquery.min.js') !!}
 {!! Html::script('/js/bootstrap.min.js') !!}
 {!! Html::script('/js/anim.js') !!}
-<!--<div id="footer">-->
+        <!--<div id="footer">-->
 <!--<p>Powered by helloweba.com 允许转载、修改和使用本站的DEMO，但请注明出处：<a href="http://www.helloweba.com">www.helloweba.com</a></p>-->
 <!--</div>-->
 <style>
