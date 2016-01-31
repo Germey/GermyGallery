@@ -35,7 +35,7 @@
                     </span>
                         @if(count($memory->getImages))
                             <div class="albums-tab">
-                                <div class="albums-tab-thumb sim-anim-6">
+                                <div class="albums-tab-thumb sim-anim-{{ rand(1, 9) }}">
                                     @foreach($memory->getImages as $image)
                                         <img src="{{ $image->path }}" alt="{{ $image->title }}" class="all studio"/>
                                     @endforeach
