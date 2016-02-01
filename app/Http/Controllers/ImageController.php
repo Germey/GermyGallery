@@ -17,9 +17,9 @@ class ImageController extends Controller
         $img = Image::make($src);
         if ($img) {
             if ($width > $height) {
-                $img->resize($width, null);
+                $img->resize($width, $width * $img->height() / $img->width());
             } else {
-                $img->resize(null, $height);
+                $img->resize($height * $img->width() / $img->height(), $height);
             }
             return $img->response('png');
         }
