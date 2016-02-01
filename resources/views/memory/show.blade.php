@@ -6,7 +6,7 @@
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>那份记忆</h5>
-                        <a href='/' class="btn btn-primary btn-xs pull-right edit-info">预览</a>
+                        <a href='/' class="btn btn-primary btn-xs pull-right">预览</a>
 
                     </div>
                     <div class="ibox-content">
