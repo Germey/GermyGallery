@@ -22,6 +22,7 @@ class CreateMemoriesTable extends Migration {
             $table->date('date_start');
             $table->string('tags');
             $table->date('date_end');
+            $table->string('anim');
             $table->timestamps();
 		});
 	}

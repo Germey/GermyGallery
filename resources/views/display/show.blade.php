@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $configs['title'] }} | {{ $configs['description'] }}</title>
+    {!! Html::style('/css/plugins/font-awesome/font-awesome.min.css') !!}
     {!! Html::style('/css/main.css') !!}
     {!! Html::style('/css/cd-style.css') !!}
     {!! Html::style('/css/photo-anim.css') !!}
@@ -29,13 +30,18 @@
                         <p>
                             {{ $memory->description }}
                         </p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>
+                            {{ $memory->location }}
+                        </p>
                     <span class="cd-date">
                         {{ $memory->date_start }}
-                        {{ $memory->date_end ? ' - ' . $memory->date_end : '' }}
+                        {{ ($memory->date_end && $memory->date_end != $memory->date_start) ? (' - ' . $memory->date_end) : '' }}
                     </span>
                         @if(count($memory->getImages))
                             <div class="albums-tab">
-                                <div class="albums-tab-thumb sim-anim-{{ rand(1, 9) }}">
+                                <div class="albums-tab-thumb {{ ($memory->anim == 'random')?('sim-anim-'.rand(1,9)):$memory->anim }}">
                                     @foreach($memory->getImages as $image)
                                         <img src="{{ $image->path }}" alt="{{ $image->title }}" class="all studio"/>
                                     @endforeach
@@ -79,6 +85,10 @@
 
     .cd-timeline-content p {
         color: {!! $configs['description_color'] !!};
+    }
+
+    .cd-timeline-content .location {
+        color: {!! $configs['location_color'] !!};
     }
 
     /* content */

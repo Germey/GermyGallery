@@ -19,6 +19,7 @@ class ConfigController extends Controller
         'panel_color',
         'title_color',
         'description_color',
+        'location_color',
         'date_color',
         'bg_img',
         'is_open',

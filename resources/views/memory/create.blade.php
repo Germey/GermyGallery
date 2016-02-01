@@ -83,6 +83,14 @@
                         </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
+                            {!! Form::label('anim', '照片动画', ['class' => 'col-sm-2 control-label']) !!}
+                            <div class="col-sm-2">
+                                {!! Form::select('anim', $anim, 'random', ['class' => 'form-control', 'placeholder' => '照片展示动画']) !!}
+                                <span class="help-block m-b-none">选择一个你喜欢的播放动画吧~</span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
                             <div class="col-sm-12 text-center">
                                 {!! Form::submit('保存记忆', ['class' => 'btn btn-primary']) !!}
                             </div>

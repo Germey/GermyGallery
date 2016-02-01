@@ -6,6 +6,8 @@
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>那份记忆</h5>
+                        <a href='/' class="btn btn-primary btn-xs pull-right edit-info">预览</a>
+
                     </div>
                     <div class="ibox-content">
                         <div class="row">
@@ -203,6 +205,16 @@
                                data-url="{{ url('/manage/memory/update-info') }}"
                                class="editable" id="editable-happiness">{{ $memory->happiness }}</a>
                         </p>
+                        <p>
+                            <i class="fa fa-heart"></i><strong>照片动画</strong>
+                        </p>
+
+                        <p>
+                            <a data-name="anim" data-type="select" data-value="{{ $memory->anim }}"
+                               data-pk="{{ $memory->id }}" data-title="照片动画"
+                               data-url="{{ url('/manage/memory/update-info') }}"
+                               class="editable" id="editable-anim">{{ $memory->getAnimName() }}</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -221,6 +233,9 @@
             });
             $('#editable-happiness').editable({
                 source: '{!! $happiness !!}'
+            });
+            $('#editable-anim').editable({
+                source: '{!! $images_anim !!}'
             });
             $('.editable').editable();
             $('#memory-show').on('click', '.edit-info', function() {

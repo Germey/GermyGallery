@@ -52,6 +52,13 @@
             ]);
             Config::create([
                 'type' => 'color',
+                'key' => 'location_color',
+                'value' => 'rgba(255,255,255,0.3)',
+                'title' => '地点颜色',
+                'description' => '修改地点颜色'
+            ]);
+            Config::create([
+                'type' => 'color',
                 'key' => 'date_color',
                 'value' => 'rgba(255,255,255,0.3)',
                 'title' => '日期颜色',
@@ -105,6 +112,22 @@
                 'type' => 'site',
                 'key' => 'skin',
                 'value' => 'blue-skin'
+            ]);
+            Config::create([
+                'type' => 'array',
+                'key' => 'images_anim',
+                'value' => [
+                    'random' => '随机动画',
+                    'sim-anim-1' => '圆周绽放',
+                    'sim-anim-2' => '旋转长廊',
+                    'sim-anim-3' => '扇面展开',
+                    'sim-anim-4' => '抛砖引玉',
+                    'sim-anim-5' => '陀螺飞旋',
+                    'sim-anim-6' => '经典画布',
+                    'sim-anim-7' => '国画长卷',
+                    'sim-anim-8' => '大鹏展翅',
+                    'sim-anim-9' => '影院巨幕',
+                ]
             ]);
         }
 

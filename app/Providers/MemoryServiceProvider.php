@@ -4,6 +4,7 @@ use App\Model\Memory;
 use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
 use View, Response;
+use App\Model\Config;
 
 class MemoryServiceProvider extends ServiceProvider
 {
@@ -20,6 +21,7 @@ class MemoryServiceProvider extends ServiceProvider
         $this->request = $request;
         $this->composeHappiness();
         $this->composeMemoryTags();
+        $this->composeImageAnim();
     }
 
     /**
@@ -79,6 +81,27 @@ class MemoryServiceProvider extends ServiceProvider
             }
             $view->with([
                 'happiness' => $happiness
+            ]);
+        });
+    }
+
+    /**
+     *  compose images anim variable.
+     */
+    private function composeImageAnim()
+    {
+        View::composer([
+            'memory.create',
+        ], function ($view) {
+            $view->with([
+                'anim' => Config::getConfigValueByKey('images_anim')
+            ]);
+        });
+        View::composer([
+            'memory.show',
+        ], function ($view) {
+            $view->with([
+                'images_anim' => Response::json(Config::getConfigValueByKey('images_anim'))->getContent()
             ]);
         });
     }

@@ -61,4 +61,20 @@ class Memory extends Model
         }
     }
 
+    /**
+     * Get anim name of images.
+     *
+     * @param $anim
+     * @return mixed
+     */
+    public function getAnimName()
+    {
+        $anim = $this->getAttribute('anim');
+        $images_anim = Config::getConfigValueByKey('images_anim');
+        if ($images_anim && is_array($images_anim) && array_key_exists($anim, $images_anim)) {
+            return $images_anim[$anim];
+        }
+        return null;
+    }
+
 }
