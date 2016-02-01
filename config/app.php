@@ -149,6 +149,8 @@ return [
 		'App\Providers\MemoryServiceProvider',
 
         'Laracasts\Flash\FlashServiceProvider',
+        'Intervention\Image\ImageServiceProvider'
+
 
 
     ],
@@ -201,6 +203,7 @@ return [
         'Form'      => 'Illuminate\Html\FormFacade',
         'Html'      => 'Illuminate\Html\HtmlFacade',
         'Flash'     => 'Laracasts\Flash\Flash',
+        'Image'     => 'Intervention\Image\Facades\Image'
 
     ],
 

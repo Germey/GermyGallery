@@ -43,7 +43,7 @@
                             <div class="albums-tab">
                                 <div class="albums-tab-thumb {{ ($memory->anim == 'random')?('sim-anim-'.rand(1,9)):$memory->anim }}">
                                     @foreach($memory->getImages as $image)
-                                        <img src="{{ $image->path }}" alt="{{ $image->title }}" class="all studio"/>
+                                        <img src="{{ image_thumb($image->path) }}" alt="{{ $image->title }}" class="all studio"/>
                                     @endforeach
                                 </div>
                             </div>

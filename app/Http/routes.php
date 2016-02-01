@@ -16,6 +16,7 @@
     Route::model('token', 'App\Model\Token');
 
     Route::group(['middleware' => 'guest'], function () {
+        Route::controller('image', 'ImageController');
         Route::get('/', 'DisplayController@index');
     });
 

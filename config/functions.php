@@ -7,7 +7,6 @@
      */
     use Illuminate\Http\Request;
 
-
     if (! function_exists('assoc_to_index')) {
         /**
          * Generate a URL to a named route.
@@ -139,5 +138,21 @@
                 $array[$key] = $key;
             }
             return $array;
+        }
+    }
+
+
+    if (! function_exists('image_thumb')) {
+        /**
+         * Return thumb of image.
+         *
+         * @param $src
+         * @param int $width
+         * @param int $height
+         * @return mixed
+         */
+        function image_thumb($src, $width = 320, $height = 180)
+        {
+            return '/image/thumb?src=' . urlencode($src) . '&width=' . $width . '&height=' . $height;
         }
     }
